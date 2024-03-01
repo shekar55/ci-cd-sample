@@ -45,9 +45,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./LearnSmartCoding.API/Dockerfile
+          file: ./Dockerfile
           push: true
-          tags: chandu5562/dockerfordotnetapi:latest,chandu5562/dockerfordotnetapi:${{ github.run_number }}
+          tags: chandu5562/dockernet:latest,chandu5562/dockernet:${{ github.run_number }}
  deploy-to-eks:
   needs: docker
   runs-on: ubuntu-latest
